@@ -1,7 +1,6 @@
 <?php
 
-function get_profile($id)
+function get_user_meta($id, $key)
 {
-    $profile = get_user_by('id', $id);
-    return $profile;
+    return get_metadata('user', $user_id, $key, $single);
 }
